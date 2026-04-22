@@ -24,6 +24,7 @@ pool: aioredis.Redis | None = None
 
 async def init():
     global pool
+    print(f"REDIS URL: {settings.redis_url}")
     pool = aioredis.from_url(
         settings.redis_url,
         encoding="utf-8",
