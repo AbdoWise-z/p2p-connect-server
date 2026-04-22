@@ -102,7 +102,6 @@ Send `{"type":"ping"}` to get `{"type":"pong"}` (liveness check).
 2. Install [flyctl](https://fly.io/docs/hands-on/install-flyctl/) and run `fly launch`
 3. Set secrets:
    ```bash
-   redis-cli --tls -u redis://default:gQAAAAAAAZgQAAIgcDFiZTVmMjAzZDBiNzc0MDg4YThjM2VjNzg4NGJiNWM0Nw@sweeping-possum-104464.upstash.io:6379
    fly secrets set REDIS_URL="rediss://default:token@host.upstash.io:6379"
    fly secrets set KNOWN_PUBKEYS="your-space-key"
    ```
